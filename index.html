@@ -17,13 +17,13 @@
       background-color: black;
       color: white;
     }
-    
+
     /* Define the logo size */
     #logo { 
       outline: none; 
       border: none;
-      width: 80px; /* Adjust the size of the logo */
-      height: 80px; /* Adjust the size of the logo */
+      width: 60px; /* Set a fixed size for the logo */
+      height: 60px; /* Set a fixed size for the logo */
     }
 
     /* Custom font for the heading */
@@ -44,8 +44,7 @@
     /* Style for the heading */
     .styled-heading {
       font-family: 'HelveticaNowTextBold', sans-serif;
-      font-size: 6vw; /* Use vw to make it responsive */
-      max-font-size: 50px; /* Set a maximum size for larger screens */
+      font-size: 36px; /* Set a fixed size for the font */
       margin: 0;
     }
 
@@ -62,9 +61,13 @@
 
     @media only screen and (max-width: 650px) { 
       body { width: 90vw !important; } 
+      #logo { 
+        width: 50px; /* Slightly reduce logo size on smaller devices */
+        height: 50px; 
+      }
+      
       .styled-heading {
-        font-size: 8vw; /* Adjust font size for smaller devices */
-        max-font-size: 40px; /* Set a maximum size for smaller screens */
+        font-size: 30px; /* Slightly reduce font size on smaller devices */
       }
     }
   </style>
