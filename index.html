@@ -44,7 +44,8 @@
     /* Style for the heading */
     .styled-heading {
       font-family: 'HelveticaNowTextBold', sans-serif;
-      font-size: 65px;
+      font-size: 8vw; /* Use vw to make it responsive */
+      max-font-size: 65px; /* Set a maximum size for larger screens */
       margin: 0;
     }
 
@@ -58,8 +59,13 @@
     body h3:first-child { margin-bottom: 5px; }
     body h4 { margin-top: 30px; }
     body h5 { margin: 0px; font-weight: 100; }
+    
     @media only screen and (max-width: 650px) { 
       body { width: 90vw !important; } 
+      .styled-heading {
+        font-size: 10vw; /* Adjust font size for smaller devices */
+        max-font-size: 50px; /* Set a maximum size for smaller screens */
+      }
     }
   </style>
 </head>
